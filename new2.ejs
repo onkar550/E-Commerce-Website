@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css Styling -->
+    <style>
+
+body{
+    background-color: white;   
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid azure;
+    margin: 20px;
+    margin-bottom: 2rem !important;
+    height: 400px;
+    margin-right: 60px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.card-img-top{
+    width: 100% !important;
+    height: 50% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0px;
+}
+.image{
+    height: 200px;
+    width: 100px;
+
+}
+.buys{
+    border: 2px solid black;
+    height: 270px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.ecart img{
+    height: 70px;
+    width: 130px;
+    margin-top: 20px;
+}
+.main{
+    background-color: white;
+    height: 70px;
+}
+.nav-item a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar a i{
+   color: red;
+   font-size: 30px;
+}
+.compass{
+   font-size: 40px;
+   color: red;
+   margin-top: 30px;
+}
+.about{
+    margin-top: 70px;
+}
+.fotter3{
+    margin-top: 40px;
+}
+.imageof img{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 50%;
+}
+.btn-dark{
+    width: 130px;
+}
+.inner{
+  margin-left: 180px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="container-fluid shadow-lg sticky-top main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <a class="navbar-brand" href="#"><i class="fa-regular fa-compass"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/shops">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/info">Cart</a>
+            </li>
+          </ul>
+        </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+<br>
+     
+    <!-- Middle Part form Area -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 inner">
+                    <form action="/info" method="post">
+                          <label for="name" class="form-label"><b>Enter the Product Name</b></label>
+                        <input type="text" name="name" placeholder="Enter the produce name" id="name" class="form-control" required/>
+                        <br>
+                        <label for="number" class="form-label"><b>Enetr The Quantity</b></label>
+                        <input type="number" name="quantity" placeholder="Enter the Quantity" id="number" class="form-control" required>
+                        <br>
+                         <label for="adress" class="form-label"><b>Enter Your Adress</b></label>
+                        <input type="text" name="adress" placeholder="Enetr Your Adress" class="form-control" id="adress" required/>
+                        <br>
+                        <label class="form-label" for="payment"><b>Enter Yout Payment Option</b></label>
+                        <div class="input-group mb-3" >
+                            <label class="input-group-text" for="inputGroupSelect01">Pay</label>
+                            <select class="form-select" id="inputGroupSelect01" required>
+                              <option selected></option>
+                              <option value="1">Cash On Delivary</option>
+                              <option value="2">Online Payment</option>
+                            </select>
+                          </div>
+                         <br>
+                          <label for="number2" class="form-label"><b>Enter Your Mobile Number</b></label>
+                        <input type="" name="number" placeholder="Enetr your number" class="form-control" id="number2" required/>
+                        <br>
+                        <button class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Footer Area -->
+    <footer class="container-fluid mt-5 shadow-lg">
+        <div class="container mt-3">
+         <div class="row fotter3">
+           <i class="fa-regular fa-compass compass"></i>
+           <div class="col-6 fotter1">
+             <br><br>
+             <h5><b>Contact</b></h5>
+             <br>
+             <p><b>Adress:</b>562 Welligiton road,street 32 san francisco</p>
+             <p><b>Phone:</b>+91(87654389)</p>
+             <p><b>Hours:</b>10:00-18:00 Mon-Sat</p>
+             <br>
+             <p><b>Follow Us</b></p>
+             <div class="logo">
+               <i class="fa-brands fa-facebook-f"></i>&nbsp;
+               <i class="fa-brands fa-twitter"></i>&nbsp;
+               <i class="fa-brands fa-instagram"></i>&nbsp;
+               <i class="fa-brands fa-youtube"></i>
+             </div>
+           </div>
+           <div class="col-3 about">
+             <h5><b>About</b></h5>
+             <br>
+             <p>About Us</p>
+             <p>Delivary Management</p>
+             <p>Privacy Policy</p>
+             <p>Yerms and Conditions</p>
+             <p>Contact Us</p>
+           </div>
+           <div class="col-3 about">
+             <h5><b>My Account</b></h5>
+             <br>
+             <p>Sign In</p>
+             <p>View Cart</p>
+             <p>My Wishlist</p>
+             <p>Track my Order</p>
+             <p>Help</p>
+           </div>
+         </div>
+        </div>
+     </footer>
+</body>
+</html>
